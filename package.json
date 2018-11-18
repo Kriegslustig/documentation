@@ -116,6 +116,7 @@
     "url": "git@github.com:documentationjs/documentation.git"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "rm -rf lib && babel -D src -d lib && npm run doc",
     "release": "standard-version",
     "precommit": "lint-staged",
